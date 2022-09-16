@@ -1,0 +1,7 @@
+C:\Users\GOSTE\source\repos\TrujilloSzitai\practica_11-8\obj\Debug\practica_11-8.csproj.AssemblyReference.cache
+C:\Users\GOSTE\source\repos\TrujilloSzitai\practica_11-8\obj\Debug\practica_11-8.csproj.CoreCompileInputs.cache
+C:\Users\GOSTE\source\repos\TrujilloSzitai\practica_11-8\bin\Debug\practica_11-8.exe.config
+C:\Users\GOSTE\source\repos\TrujilloSzitai\practica_11-8\bin\Debug\practica_11-8.exe
+C:\Users\GOSTE\source\repos\TrujilloSzitai\practica_11-8\bin\Debug\practica_11-8.pdb
+C:\Users\GOSTE\source\repos\TrujilloSzitai\practica_11-8\obj\Debug\practica_11-8.exe
+C:\Users\GOSTE\source\repos\TrujilloSzitai\practica_11-8\obj\Debug\practica_11-8.pdb

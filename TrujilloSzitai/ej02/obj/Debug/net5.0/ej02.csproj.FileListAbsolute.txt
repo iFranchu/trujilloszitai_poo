@@ -1,0 +1,16 @@
+C:\Users\ET26\source\repos\TrujilloSzitai\ej02\obj\Debug\net5.0\ej02.csproj.AssemblyReference.cache
+C:\Users\ET26\source\repos\TrujilloSzitai\ej02\obj\Debug\net5.0\ej02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ET26\source\repos\TrujilloSzitai\ej02\obj\Debug\net5.0\ej02.AssemblyInfoInputs.cache
+C:\Users\ET26\source\repos\TrujilloSzitai\ej02\obj\Debug\net5.0\ej02.AssemblyInfo.cs
+C:\Users\ET26\source\repos\TrujilloSzitai\ej02\obj\Debug\net5.0\ej02.csproj.CoreCompileInputs.cache
+C:\Users\ET26\source\repos\TrujilloSzitai\ej02\bin\Debug\net5.0\ej02.exe
+C:\Users\ET26\source\repos\TrujilloSzitai\ej02\bin\Debug\net5.0\ej02.deps.json
+C:\Users\ET26\source\repos\TrujilloSzitai\ej02\bin\Debug\net5.0\ej02.runtimeconfig.json
+C:\Users\ET26\source\repos\TrujilloSzitai\ej02\bin\Debug\net5.0\ej02.runtimeconfig.dev.json
+C:\Users\ET26\source\repos\TrujilloSzitai\ej02\bin\Debug\net5.0\ej02.dll
+C:\Users\ET26\source\repos\TrujilloSzitai\ej02\bin\Debug\net5.0\ref\ej02.dll
+C:\Users\ET26\source\repos\TrujilloSzitai\ej02\bin\Debug\net5.0\ej02.pdb
+C:\Users\ET26\source\repos\TrujilloSzitai\ej02\obj\Debug\net5.0\ej02.dll
+C:\Users\ET26\source\repos\TrujilloSzitai\ej02\obj\Debug\net5.0\ref\ej02.dll
+C:\Users\ET26\source\repos\TrujilloSzitai\ej02\obj\Debug\net5.0\ej02.pdb
+C:\Users\ET26\source\repos\TrujilloSzitai\ej02\obj\Debug\net5.0\ej02.genruntimeconfig.cache

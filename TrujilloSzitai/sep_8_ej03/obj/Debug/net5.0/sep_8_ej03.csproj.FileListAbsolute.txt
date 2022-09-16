@@ -1,0 +1,16 @@
+C:\Users\Alumno\source\repos\TrujilloSzitai\sep_8_ej03\bin\Debug\net5.0\sep_8_ej03.exe
+C:\Users\Alumno\source\repos\TrujilloSzitai\sep_8_ej03\bin\Debug\net5.0\sep_8_ej03.deps.json
+C:\Users\Alumno\source\repos\TrujilloSzitai\sep_8_ej03\bin\Debug\net5.0\sep_8_ej03.runtimeconfig.json
+C:\Users\Alumno\source\repos\TrujilloSzitai\sep_8_ej03\bin\Debug\net5.0\sep_8_ej03.runtimeconfig.dev.json
+C:\Users\Alumno\source\repos\TrujilloSzitai\sep_8_ej03\bin\Debug\net5.0\sep_8_ej03.dll
+C:\Users\Alumno\source\repos\TrujilloSzitai\sep_8_ej03\bin\Debug\net5.0\ref\sep_8_ej03.dll
+C:\Users\Alumno\source\repos\TrujilloSzitai\sep_8_ej03\bin\Debug\net5.0\sep_8_ej03.pdb
+C:\Users\Alumno\source\repos\TrujilloSzitai\sep_8_ej03\obj\Debug\net5.0\sep_8_ej03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alumno\source\repos\TrujilloSzitai\sep_8_ej03\obj\Debug\net5.0\sep_8_ej03.AssemblyInfoInputs.cache
+C:\Users\Alumno\source\repos\TrujilloSzitai\sep_8_ej03\obj\Debug\net5.0\sep_8_ej03.AssemblyInfo.cs
+C:\Users\Alumno\source\repos\TrujilloSzitai\sep_8_ej03\obj\Debug\net5.0\sep_8_ej03.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\source\repos\TrujilloSzitai\sep_8_ej03\obj\Debug\net5.0\sep_8_ej03.dll
+C:\Users\Alumno\source\repos\TrujilloSzitai\sep_8_ej03\obj\Debug\net5.0\ref\sep_8_ej03.dll
+C:\Users\Alumno\source\repos\TrujilloSzitai\sep_8_ej03\obj\Debug\net5.0\sep_8_ej03.pdb
+C:\Users\Alumno\source\repos\TrujilloSzitai\sep_8_ej03\obj\Debug\net5.0\sep_8_ej03.genruntimeconfig.cache
+C:\Users\Alumno\source\repos\TrujilloSzitai\sep_8_ej03\obj\Debug\net5.0\sep_8_ej03.csproj.AssemblyReference.cache
