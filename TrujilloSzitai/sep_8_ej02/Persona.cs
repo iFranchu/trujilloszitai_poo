@@ -4,18 +4,18 @@ namespace sep_8_ej02
 {
     class Persona
     {
-        string nombre;
-        public string Nombre { get { return nombre; } set { nombre = ""; } }
-        sbyte edad;
-        public sbyte Edad { get { return edad; } set { edad = 0; } }
+        string nombre = "";
+        public string Nombre { get { return nombre; } set { nombre = value; } }
+        sbyte edad = 0;
+        public sbyte Edad { get { return edad; } set { edad = value; } }
         Int32 dni;
         public Int32 Dni { get { return dni; } }
-        char sexo;
-        public char Sexo { get { return sexo; } set { sexo = 'H'; } }
-        float peso;
-        public float Peso { get { return peso; } set { peso = 0; } }
-        float altura;
-        public float Altura { get { return altura; } set { altura = 0; } }
+        char sexo = 'H';
+        public char Sexo { get { return sexo; } set { sexo = value; } }
+        float peso = 0;
+        public float Peso { get { return peso; } set { peso = value; } }
+        float altura = 0;
+        public float Altura { get { return altura; } set { altura = value; } }
         float imc;
 
 

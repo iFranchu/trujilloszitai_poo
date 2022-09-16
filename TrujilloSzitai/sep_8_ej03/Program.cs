@@ -7,7 +7,7 @@ namespace sep_8_ej03
     {
         static void Main(string[] args)
         {
-            List<Password> passwords = new List<Password>();
+            List<Password> passwords = new List<Password>(); // Usando una lista para hacer que el código sea más escalable
             int cantidad;
             Console.WriteLine("Ingrese la cantidad de contraseñas a generar:");
             string c = Console.ReadLine();

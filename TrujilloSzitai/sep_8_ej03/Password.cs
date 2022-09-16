@@ -9,12 +9,12 @@ namespace sep_8_ej03
     class Password
     {
                 string nombre;
-        public string Nombre { get { return nombre; } set { nombre = Nombre; } }
-        sbyte longitud;
+        public string Nombre { get { return nombre; } set { nombre = value; } }
+        sbyte longitud = 8;
         public sbyte Longitud
         {
             get { return longitud; }
-            set { longitud = 8; }
+            set { longitud = value; }
         }
         string contraseña;
         public string Contraseña { get { return contraseña; } }
