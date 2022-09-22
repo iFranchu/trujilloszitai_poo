@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alumno\\source\\repos\\TrujilloSzitai\\sep_8_ej02\\sep_8_ej02.csproj": {}
+    "C:\\Users\\GOSTE\\source\\repos\\trujilloszitai_poo\\TrujilloSzitai\\sep_8_ej02\\sep_8_ej02.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alumno\\source\\repos\\TrujilloSzitai\\sep_8_ej02\\sep_8_ej02.csproj": {
+    "C:\\Users\\GOSTE\\source\\repos\\trujilloszitai_poo\\TrujilloSzitai\\sep_8_ej02\\sep_8_ej02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alumno\\source\\repos\\TrujilloSzitai\\sep_8_ej02\\sep_8_ej02.csproj",
+        "projectUniqueName": "C:\\Users\\GOSTE\\source\\repos\\trujilloszitai_poo\\TrujilloSzitai\\sep_8_ej02\\sep_8_ej02.csproj",
         "projectName": "sep_8_ej02",
-        "projectPath": "C:\\Users\\Alumno\\source\\repos\\TrujilloSzitai\\sep_8_ej02\\sep_8_ej02.csproj",
-        "packagesPath": "C:\\Users\\Alumno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alumno\\source\\repos\\TrujilloSzitai\\sep_8_ej02\\obj\\",
+        "projectPath": "C:\\Users\\GOSTE\\source\\repos\\trujilloszitai_poo\\TrujilloSzitai\\sep_8_ej02\\sep_8_ej02.csproj",
+        "packagesPath": "C:\\Users\\GOSTE\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\GOSTE\\source\\repos\\trujilloszitai_poo\\TrujilloSzitai\\sep_8_ej02\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\GOSTE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }
