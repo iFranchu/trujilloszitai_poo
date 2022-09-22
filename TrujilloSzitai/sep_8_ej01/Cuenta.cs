@@ -6,7 +6,9 @@ namespace sep_8_ej01
     {
         string titular;
         string Titular { get { return titular; } set { titular = value; } }
-        double cantidad { get { return cantidad; } set { cantidad = value; } }
+        double cantidad;
+        public double Cantidad { get { return cantidad; } set { cantidad = value; } }
+
         public Cuenta(string titular, double cantidad)
         {
             this.titular = titular;
