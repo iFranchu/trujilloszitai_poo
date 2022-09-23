@@ -1,0 +1,16 @@
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej04\bin\Debug\net5.0\ej04.exe
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej04\bin\Debug\net5.0\ej04.deps.json
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej04\bin\Debug\net5.0\ej04.runtimeconfig.json
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej04\bin\Debug\net5.0\ej04.runtimeconfig.dev.json
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej04\bin\Debug\net5.0\ej04.dll
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej04\bin\Debug\net5.0\ref\ej04.dll
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej04\bin\Debug\net5.0\ej04.pdb
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej04\obj\Debug\net5.0\ej04.csproj.AssemblyReference.cache
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej04\obj\Debug\net5.0\ej04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej04\obj\Debug\net5.0\ej04.AssemblyInfoInputs.cache
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej04\obj\Debug\net5.0\ej04.AssemblyInfo.cs
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej04\obj\Debug\net5.0\ej04.csproj.CoreCompileInputs.cache
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej04\obj\Debug\net5.0\ej04.dll
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej04\obj\Debug\net5.0\ref\ej04.dll
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej04\obj\Debug\net5.0\ej04.pdb
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej04\obj\Debug\net5.0\ej04.genruntimeconfig.cache
