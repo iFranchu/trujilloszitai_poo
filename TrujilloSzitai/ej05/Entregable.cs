@@ -11,6 +11,6 @@ namespace ej05
         void Entregar();
         void Devolver();
         bool IsEntregado();
-        bool CompareTo(Entregable a);
+        bool CompareTo(Object a);
     }
 }

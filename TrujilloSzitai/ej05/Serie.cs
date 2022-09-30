@@ -49,7 +49,7 @@ namespace ej05
         }
         public bool CompareTo(Object a)
         {
-            Serie serie = (Serie)a;
+            Serie serie = (Serie) a;
 
             if (serie.temporadas > this.temporadas) return true;
             else return false;

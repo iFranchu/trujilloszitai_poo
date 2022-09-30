@@ -17,7 +17,7 @@ namespace ej05
         public string Titulo { get { return titulo; } set { titulo = value; } }
         public sbyte HorasDeJuego { get { return horasDeJuego; } set { horasDeJuego = value; } }
         public string Genero { get { return genero; } set { genero = value; } }
-        public string Comapania { get { return compania; } set { compania = value; } }
+        public string Compania { get { return compania; } set { compania = value; } }
 
         public Videojuego() { }
 

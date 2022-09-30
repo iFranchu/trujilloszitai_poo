@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GGF7kx4tbIQBlxbrBvFv4qcAc5+ZOiUka5SZ+EY9Cu69jQEXl+cxg+6lnY7w+D1zr8m7QlUbRZqlFZr9h/LCxA==",
+  "dgSpecHash": "znjZGVRDJ8vjsvXXwYulocHYO8ofWusifGo9rCfpJGEL/N5rsywsqN4vi1WQ3dirdADbCUaYhzI62hzKatsdrw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Alumno\\source\\repos\\trujilloszitai_poo\\TrujilloSzitai\\sep_8_ej03\\sep_8_ej03.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Alumno\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512",
-    "C:\\Users\\Alumno\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Alumno\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Alumno\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
