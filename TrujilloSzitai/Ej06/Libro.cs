@@ -20,9 +20,24 @@ namespace Ej06
 
         public Libro() { }
 
+        public Libro(string isbn, string titulo, string autor, Int16 paginas) {
+            this._ISBN = isbn;
+            this.titulo = titulo;
+            this.autor = autor;
+            this.paginas = paginas;
+        }
+
+
         public override string ToString()
         {
-            return $"El libro {titulo} de código {_ISBN} creado por {autor} tiene {paginas}";
+            return $"El libro {titulo} de código {_ISBN} escrito por {autor} tiene {paginas} páginas.";
+        }
+
+        public int ComparePages(Libro libro)
+        {
+            if (this.paginas > libro.paginas) return 1;
+            else if (this.paginas == libro.paginas) return 0;
+            else return -1;
         }
     }
 }

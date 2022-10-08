@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1D3E74F9-592B-4FA1-BF5C-B7E686A30B53}</ProjectGuid>
+    <ProjectGuid>{E27C42B4-4D14-4BD7-86BC-15DF50ED6650}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ej06</RootNamespace>
-    <AssemblyName>Ej06</AssemblyName>
+    <RootNamespace>ej06</RootNamespace>
+    <AssemblyName>ej06</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Libro.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
