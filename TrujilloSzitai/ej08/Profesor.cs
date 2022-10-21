@@ -12,38 +12,37 @@ namespace ej08
         byte[] aulas = { 0 };
 
         string[] posiblesMaterias = new string[3]{
-            "matematicas",
-            "filosofia",
-            "fisica",
+            "Matemáticas",
+            "Filosofía",
+            "Física",
         };
 
         public string[] Materias { get { return materias; } }
         public string[] PosiblesMaterias { get { return posiblesMaterias; } }
 
-        //string[] posiblesMaterias =
-        //{
-        //    "Matemáticas",
-        //    "Filosofía",
-        //    "Física"
-        //};
-
         public Profesor() { }
         public Profesor(string nombre, sbyte edad, char sexo, string[] materias, byte[] aulas) : base(nombre, edad, sexo)
         {
-            // Algoritmo para verificar que las materias ingresadas sean correctas
-            bool checkMaterias = true;
-            foreach (string materia in materias)
-            {
-                byte[] tempBytes = Encoding.GetEncoding("ISO-8859-8").GetBytes(materia);
-                string asciiStr = Encoding.UTF8.GetString(tempBytes);
-                if (!posiblesMaterias.Contains(asciiStr.ToLower())) {
-                    checkMaterias = false;
-                }
-            }
-            if (checkMaterias) this.materias = materias;
-            else this.materias = new string[] { "Matemáticas" };
-            
+            // Algoritmo para verificar que las materias ingresadas sean correctas, aunque me di cuenta de que no funciona lo que probé para eliminar las tildes
+            //bool checkMaterias = true;
+            //foreach (string materia in materias)
+            //{
+            //    byte[] tempBytes = Encoding.GetEncoding("ISO-8859-8").GetBytes(materia);
+            //    string asciiStr = Encoding.UTF8.GetString(tempBytes);
+            //    if (!posiblesMaterias.Contains(asciiStr.ToLower()))
+            //    {
+            //        checkMaterias = false;
+            //    }
+            //    else checkMaterias = true;
+            //}
+            this.materias = checkMaterias ? materias : new string[] { "Matemáticas" };
             this.aulas = aulas;
+        }
+
+        bool CheckMaterias(string[] array)
+        {
+            if (posiblesMaterias.Intersect(array).Any()) return true;
+            return false;
         }
     }
 }

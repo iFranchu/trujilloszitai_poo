@@ -11,7 +11,12 @@ namespace ej08
         byte idAula = 0;
         sbyte capacidad = 30;
         sbyte presentismo = 0;
-        string[] materiasPermitidas = { "matematicas" };
+        string[] materias = { "matematicas" };
+        string[] posiblesMaterias = new string[3]{
+            "matematicas",
+            "filosofia",
+            "fisica",
+        };
         Profesor profesor = new Profesor();
         List<Alumno> alumnos = new List<Alumno>();
 
@@ -25,36 +30,53 @@ namespace ej08
         {
             this.idAula = id;
             this.capacidad = capacidad;
-            this.materiasPermitidas = materias;
+            bool checkMaterias = true;
+            foreach (string materia in materias)
+            {
+                byte[] tempBytes = Encoding.GetEncoding("ISO-8859-8").GetBytes(materia);
+                string asciiStr = Encoding.UTF8.GetString(tempBytes);
+                if (!posiblesMaterias.Contains(asciiStr.ToLower()))
+                {
+                    checkMaterias = false;
+                }
+                else checkMaterias = true;
+            }
+            this.materias = checkMaterias ? materias : new string[] { "Matemáticas" };
             this.profesor = profesor;
             this.alumnos = alumnos;
+            this.presentismo = Asistencia();
         }
 
         public bool AulaDisponible()
         {
-            return (profesor.Asistencia() && ProfesorCorrecto() && Asistencia());
+            return (profesor.Presente && ProfesorCorrecto() && (presentismo >= capacidad / 2));
         }
 
-        public bool ProfesorCorrecto()
+        bool ProfesorCorrecto()
         {
             bool checkedMaterias = true;
             foreach(string materia in this.profesor.Materias)
             {
-                if (materiasPermitidas.Contains(materia)) return true;
+                if (materias.Contains(materia)) return true;
                 else checkedMaterias = false;
             }
             return checkedMaterias;
 
         }
 
-        public bool Asistencia()
+        sbyte Asistencia()
         {
-            sbyte presentismo = 0;
+            sbyte p = 0;
             foreach(Alumno alumno in alumnos)
             {
-                if (alumno.Presente) presentismo++;
+                if (alumno.Presente) p++;
             }
-            return (presentismo > capacidad / 2);
+            return p;
+        }
+
+        public override string ToString()
+        {
+            return $"Aula N°: {this.idAula}\r\nCapacidad para: {this.capacidad} alumnos\r\nAlumnos presentes: {this.presentismo} de {alumnos.Count()}\r\nDocente presente: {profesor.Presente}\r\nMaterias dictadas: {string.Join(",", materias)}";
         }
     }
 }

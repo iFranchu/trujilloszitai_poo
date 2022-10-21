@@ -11,16 +11,18 @@ namespace ej08
         string nombre = "";
         sbyte edad = 0;
         char sexo = 'H';
+        string sexoString;
         sbyte inasistencias = 0;
         bool presente = true;
+        static Random random = new Random();
 
         public string Nombre { get { return nombre; } }
         public sbyte Edad { get { return edad; } }
         public char Sexo { get { return sexo; } }
+        public string SexoString { get { return sexoString; } }
         public sbyte Inasistencias { get { return inasistencias; } }
         public bool Presente { get { return presente; } }
-
-        static Random random = new Random();
+        public static Random Random { get { return random; } }
 
         public Persona() { }
         public Persona(string nombre, sbyte edad, char sexo)
@@ -28,6 +30,7 @@ namespace ej08
             this.nombre = nombre;
             this.edad = edad;
             this.sexo = (sexo == 'H' || sexo == 'M') ? sexo : 'H';
+            this.sexoString = (sexo == 'H') ? "Hombre" : "Mujer";
             this.presente = Asistencia();
         }
 
@@ -40,7 +43,6 @@ namespace ej08
                     inasistencias++;
                     return false;
                 }
-                return true;
             }
             else if(this is Alumno)
             {
@@ -49,9 +51,13 @@ namespace ej08
                     inasistencias++;
                     return false;
                 }
-                return true;
             }
             return true;
+        }
+
+        public override string ToString()
+        {
+            return $"Nombre: {this.nombre}\r\nEdad: {this.edad}\r\nSexo: {this.sexoString}\r\nInasistencias: {this.inasistencias}";
         }
     }
 }
