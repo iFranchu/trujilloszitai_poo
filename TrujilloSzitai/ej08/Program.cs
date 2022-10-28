@@ -10,7 +10,7 @@ namespace ej08
     {
         static void Main(string[] args)
         {
-            Profesor manuel = new Profesor("Manuel", 41, 'H', new string[] { "filosofia", "fisica" }, new byte[] { 1 });
+            Profesor manuel = new Profesor("Manuel", 41, 'H', new string[] { "Filosofía", "Física" }, new byte[] { 1 });
             List<Alumno> alumnos1 = new List<Alumno>()
             {
                 new Alumno("Omar", 16, 'H'),
@@ -34,7 +34,7 @@ namespace ej08
                 new Alumno("Omar II", 16, 'H'),
                 new Alumno("Omar III", 16, 'H'),
             };
-            Aula aula1 = new Aula(1, 20, new string[] { "filosofia", "matematicas" }, manuel, alumnos1);
+            Aula aula1 = new Aula(1, 20, new string[] { "Filosofía", "Matemáticas" }, manuel, alumnos1);
 
             if (aula1.AulaDisponible()) {
                 Console.WriteLine($"El aula {aula1.IdAula} está disponible para ser utilizada.\r\nA continuación se muestra la información del aula:");

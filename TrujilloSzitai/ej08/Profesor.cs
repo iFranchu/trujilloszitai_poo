@@ -23,26 +23,15 @@ namespace ej08
         public Profesor() { }
         public Profesor(string nombre, sbyte edad, char sexo, string[] materias, byte[] aulas) : base(nombre, edad, sexo)
         {
-            // Algoritmo para verificar que las materias ingresadas sean correctas, aunque me di cuenta de que no funciona lo que probé para eliminar las tildes
-            //bool checkMaterias = true;
-            //foreach (string materia in materias)
-            //{
-            //    byte[] tempBytes = Encoding.GetEncoding("ISO-8859-8").GetBytes(materia);
-            //    string asciiStr = Encoding.UTF8.GetString(tempBytes);
-            //    if (!posiblesMaterias.Contains(asciiStr.ToLower()))
-            //    {
-            //        checkMaterias = false;
-            //    }
-            //    else checkMaterias = true;
-            //}
-            this.materias = checkMaterias ? materias : new string[] { "Matemáticas" };
+            this.materias = CheckMaterias(materias) ? materias : new string[] { "Matemáticas" };
             this.aulas = aulas;
         }
 
         bool CheckMaterias(string[] array)
         {
-            if (posiblesMaterias.Intersect(array).Any()) return true;
-            return false;
+            var intersection = array.Intersect(posiblesMaterias, StringComparer.OrdinalIgnoreCase);
+            Console.WriteLine(intersection.Any());
+            return intersection.Any();
         }
     }
 }

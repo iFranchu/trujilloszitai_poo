@@ -11,11 +11,11 @@ namespace ej08
         byte idAula = 0;
         sbyte capacidad = 30;
         sbyte presentismo = 0;
-        string[] materias = { "matematicas" };
+        string[] materias = { "Matemáticas" };
         string[] posiblesMaterias = new string[3]{
-            "matematicas",
-            "filosofia",
-            "fisica",
+            "Matemáticas",
+            "Filosofía",
+            "Física",
         };
         Profesor profesor = new Profesor();
         List<Alumno> alumnos = new List<Alumno>();
@@ -28,20 +28,11 @@ namespace ej08
 
         public Aula(byte id, sbyte capacidad, string[] materias, Profesor profesor, List<Alumno> alumnos)
         {
+            var intersection = materias.Intersect(posiblesMaterias, StringComparer.OrdinalIgnoreCase);
+
             this.idAula = id;
             this.capacidad = capacidad;
-            bool checkMaterias = true;
-            foreach (string materia in materias)
-            {
-                byte[] tempBytes = Encoding.GetEncoding("ISO-8859-8").GetBytes(materia);
-                string asciiStr = Encoding.UTF8.GetString(tempBytes);
-                if (!posiblesMaterias.Contains(asciiStr.ToLower()))
-                {
-                    checkMaterias = false;
-                }
-                else checkMaterias = true;
-            }
-            this.materias = checkMaterias ? materias : new string[] { "Matemáticas" };
+            this.materias = intersection.Any() ? materias : new string[] { "Matemáticas" };
             this.profesor = profesor;
             this.alumnos = alumnos;
             this.presentismo = Asistencia();
@@ -49,18 +40,14 @@ namespace ej08
 
         public bool AulaDisponible()
         {
-            return (profesor.Presente && ProfesorCorrecto() && (presentismo >= capacidad / 2));
+            return (profesor.Presente && ProfesorCorrecto(profesor.Materias) && (presentismo >= capacidad / 2));
         }
 
-        bool ProfesorCorrecto()
+        bool ProfesorCorrecto(string[] array)
         {
-            bool checkedMaterias = true;
-            foreach(string materia in this.profesor.Materias)
-            {
-                if (materias.Contains(materia)) return true;
-                else checkedMaterias = false;
-            }
-            return checkedMaterias;
+            var intersection = array.Intersect(posiblesMaterias, StringComparer.OrdinalIgnoreCase);
+            Console.WriteLine(intersection.Any());
+            return intersection.Any();
 
         }
 
@@ -76,7 +63,7 @@ namespace ej08
 
         public override string ToString()
         {
-            return $"Aula N°: {this.idAula}\r\nCapacidad para: {this.capacidad} alumnos\r\nAlumnos presentes: {this.presentismo} de {alumnos.Count()}\r\nDocente presente: {profesor.Presente}\r\nMaterias dictadas: {string.Join(",", materias)}";
+            return $"Aula N°: {this.idAula}\r\nCapacidad para: {this.capacidad} alumnos\r\nAlumnos presentes: {this.presentismo} de {alumnos.Count()}\r\nDocente presente: {profesor.Presente}\r\nMaterias del docente: {string.Join(",", profesor.Materias)}\r\nMaterias dictadas: {string.Join(",", materias)}";
         }
     }
 }
