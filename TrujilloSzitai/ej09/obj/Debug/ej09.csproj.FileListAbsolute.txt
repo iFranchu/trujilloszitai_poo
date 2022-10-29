@@ -1,0 +1,7 @@
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej09\obj\Debug\ej09.csproj.AssemblyReference.cache
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej09\obj\Debug\ej09.csproj.CoreCompileInputs.cache
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej09\bin\Debug\ej09.exe.config
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej09\bin\Debug\ej09.exe
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej09\bin\Debug\ej09.pdb
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej09\obj\Debug\ej09.exe
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej09\obj\Debug\ej09.pdb
