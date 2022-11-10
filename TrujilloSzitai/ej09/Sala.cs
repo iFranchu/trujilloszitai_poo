@@ -37,10 +37,15 @@ namespace ej09
         {
             for (sbyte row = filas; row > 0; row--)
             {
-                for (int col = 65; col < 65 + columnas; col++)
+                int col = 65;
+                for (; col < columnas + 65; col++)
                 {
-                    asientos.Add(new Asiento((char) col, row));
+                    asientos.Add(new Asiento((char)col, row));
                 }
+                //for (int col = 65; col < 65 + columnas; col++)
+                //{
+                //    asientos.Add(new Asiento((char) col, row));
+                //}
             }
         }
 

@@ -9,10 +9,10 @@ namespace ej09
 {
     class Asiento
     {
-        char columna = 'A';
-        sbyte fila = 1;
-        string etiqueta = "1A";
-        Espectador cliente = null;
+        char columna;
+        sbyte fila;
+        string etiqueta = "";
+        Espectador cliente;
 
         public string Etiqueta { get { return etiqueta; } }
 
