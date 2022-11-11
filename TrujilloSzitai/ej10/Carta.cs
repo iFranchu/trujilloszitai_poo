@@ -10,12 +10,16 @@ namespace ej10
     {
         sbyte numero = 1;
         string palo = "";
-        bool revelada = false;
         bool entregada = false;
         string[] palos = { "bastos", "oro", "copas", "espada" };
         static HashSet<int> excluir = new HashSet<int>() { 8, 9 };
         static IEnumerable<int> rango = Enumerable.Range(1, 12).Where(i => !excluir.Contains(i));
         static Random r = new Random();
+
+        public sbyte Numero { get { return numero; } }
+        public string Palo { get { return palo; } }
+
+        public bool Entregada { get { return entregada; } }
 
         public Carta()
         {
@@ -29,24 +33,14 @@ namespace ej10
             palo = palos[r.Next(0, 4)];
         }
 
-        public void EntregarDevolver()
+        public void Entregar()
         {
-            entregada = !entregada;
+            entregada = true;
         }
 
-        public void Revelar()
+        public void Devolver()
         {
-            revelada = true;
-        }
-
-        public bool isEntregada()
-        {
-            return entregada;
-        }
-
-        public bool isRevelada()
-        {
-            return revelada;
+            entregada = false;
         }
 
         public override string ToString()
