@@ -5,3 +5,10 @@ C:\Users\Alumno\source\repos\trujilloszitai_poo\TrujilloSzitai\ej10\obj\Debug\ej
 C:\Users\Alumno\source\repos\trujilloszitai_poo\TrujilloSzitai\ej10\obj\Debug\ej10.csproj.CoreCompileInputs.cache
 C:\Users\Alumno\source\repos\trujilloszitai_poo\TrujilloSzitai\ej10\obj\Debug\ej10.exe
 C:\Users\Alumno\source\repos\trujilloszitai_poo\TrujilloSzitai\ej10\obj\Debug\ej10.pdb
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej10\bin\Debug\ej10.exe.config
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej10\bin\Debug\ej10.exe
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej10\bin\Debug\ej10.pdb
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej10\obj\Debug\ej10.csproj.AssemblyReference.cache
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej10\obj\Debug\ej10.csproj.CoreCompileInputs.cache
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej10\obj\Debug\ej10.exe
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\ej10\obj\Debug\ej10.pdb
