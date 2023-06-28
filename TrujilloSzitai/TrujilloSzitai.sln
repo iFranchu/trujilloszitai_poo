@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ej11", "ej11\ej11.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ej12", "ej12\ej12.csproj", "{B61A53F4-C2C7-4A96-966B-EFF9EB10AD2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "desarrolloSistemas_airline", "desarrolloSistemas_airline\desarrolloSistemas_airline.csproj", "{649CB63C-B9D1-4CA0-AB91-5A0FF5BDF855}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{B61A53F4-C2C7-4A96-966B-EFF9EB10AD2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B61A53F4-C2C7-4A96-966B-EFF9EB10AD2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B61A53F4-C2C7-4A96-966B-EFF9EB10AD2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{649CB63C-B9D1-4CA0-AB91-5A0FF5BDF855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{649CB63C-B9D1-4CA0-AB91-5A0FF5BDF855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{649CB63C-B9D1-4CA0-AB91-5A0FF5BDF855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{649CB63C-B9D1-4CA0-AB91-5A0FF5BDF855}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
