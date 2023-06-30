@@ -1,0 +1,16 @@
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_airline\bin\Debug\net5.0\desarrolloSistemas_airline.exe
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_airline\bin\Debug\net5.0\desarrolloSistemas_airline.deps.json
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_airline\bin\Debug\net5.0\desarrolloSistemas_airline.runtimeconfig.json
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_airline\bin\Debug\net5.0\desarrolloSistemas_airline.runtimeconfig.dev.json
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_airline\bin\Debug\net5.0\desarrolloSistemas_airline.dll
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_airline\bin\Debug\net5.0\ref\desarrolloSistemas_airline.dll
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_airline\bin\Debug\net5.0\desarrolloSistemas_airline.pdb
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_airline\obj\Debug\net5.0\desarrolloSistemas_airline.csproj.AssemblyReference.cache
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_airline\obj\Debug\net5.0\desarrolloSistemas_airline.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_airline\obj\Debug\net5.0\desarrolloSistemas_airline.AssemblyInfoInputs.cache
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_airline\obj\Debug\net5.0\desarrolloSistemas_airline.AssemblyInfo.cs
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_airline\obj\Debug\net5.0\desarrolloSistemas_airline.csproj.CoreCompileInputs.cache
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_airline\obj\Debug\net5.0\desarrolloSistemas_airline.dll
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_airline\obj\Debug\net5.0\ref\desarrolloSistemas_airline.dll
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_airline\obj\Debug\net5.0\desarrolloSistemas_airline.pdb
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_airline\obj\Debug\net5.0\desarrolloSistemas_airline.genruntimeconfig.cache
