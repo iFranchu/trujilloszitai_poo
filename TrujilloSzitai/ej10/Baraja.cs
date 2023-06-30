@@ -14,12 +14,13 @@ namespace ej10
         static Random r = new Random();
 
         public sbyte CantCartas { get { return cantCartas; } }
+        public sbyte Proxima { get { return proxima; } }
 
-        public Baraja() { 
-            for(int i = 0; i < cantCartas; i++)
+        public Baraja() {
+            for (int i = 0; i < cantCartas; i++)
             {
                 Carta nuevaCarta = new Carta();
-                while(cartas.Find(c => (c.Palo == nuevaCarta.Palo) && (c.Numero == nuevaCarta.Numero)) != null)
+                while (cartas.Find(c => (c.Palo == nuevaCarta.Palo) && (c.Numero == nuevaCarta.Numero)) != null)
                 {
                     nuevaCarta = new Carta();
                 }
@@ -48,11 +49,17 @@ namespace ej10
                 recuperarCartas();
                 return false;
             }
-            if (!cartas[proxima].Entregada) { 
+            else if (!cartas[proxima].Entregada) {
                 cartas[proxima].Entregar();
                 return true;
             }
+            proxima++;
             return false;
+        }
+
+        public string mostrarCarta(sbyte c)
+        {
+            return cartas[c].ToString();
         }
 
         public List<Carta> darCartas(sbyte cantidad)

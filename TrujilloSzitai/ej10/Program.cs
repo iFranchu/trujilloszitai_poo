@@ -22,9 +22,12 @@ namespace ej10
             for (int i = 0; i < 10; i++)
             {
                 if (!mazo.siguienteCarta()) Console.WriteLine("No se puede entregar la carta.");
+                else Console.WriteLine(mazo.mostrarCarta(mazo.Proxima));
             }
 
+            Console.WriteLine("");
             Console.WriteLine($"Cartas disponibles: {mazo.cartasDisponibles()}");
+            Console.WriteLine("");
 
             if (mazo.cartasMonton().Count() == 0)
             {
@@ -39,7 +42,7 @@ namespace ej10
                 }
             }
 
-
+            Console.WriteLine("");
             Console.WriteLine("Todas las cartas disponibles:");
             foreach (Carta c in mazo.mostrarBaraja())
             {
