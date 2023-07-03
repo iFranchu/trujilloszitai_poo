@@ -97,7 +97,7 @@ namespace desarrolloSistemas_airline
         override
         public string ToString()
         {
-            return $"Name: {name} Flights: {flights.Count()}";
+            return $"Name: {name} - Flights: {flights.Count()} - Open flights: {GetFlights(FlightStatus.OPEN).Count()} - Closed flights: {GetFlights(FlightStatus.CLOSED).Count()}";
         }
     }
 }

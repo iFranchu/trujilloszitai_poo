@@ -62,6 +62,10 @@ namespace desarrolloSistemas_airline
             }
 
             Console.WriteLine();
+            Console.WriteLine($"Estado actual de {airline.name}:");
+            Console.WriteLine(airline.ToString());
+
+            Console.WriteLine();
             Console.WriteLine($"Vuelos abiertos de {airline.name}:");
             foreach(Flight flight in openFlights)
             {

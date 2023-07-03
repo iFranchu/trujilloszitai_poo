@@ -168,7 +168,7 @@ namespace desarrolloSistemas_airline
             else if (GetFreeTickets().Count() == tickets.Count()) ticketsDisplay = $"All tickets ({tickets.Count()}) are free";
             else ticketsDisplay = $"Tickets sold: {tickets.Count() - GetFreeTickets().Count()} - Available tickets: {GetFreeTickets().Count()}";
 
-            return $"Origin: {origin} - Destination: {destination} - Take off time: {takeOffTime.ToString()} - Landing Time: {landingTime.ToString()} - Status: {status.ToString()} Size: {size.ToString()} - {ticketsDisplay}";
+            return $"Origin: {origin} - Destination: {destination} - Take off time: {takeOffTime.ToString()} - Landing Time: {landingTime.ToString()} - Status: {status.ToString()} - Size: {size.ToString()} - {ticketsDisplay}";
         }
     }
 }
