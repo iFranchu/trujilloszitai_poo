@@ -18,17 +18,19 @@ namespace desarrolloSistemas_airline
 
         private static Random r = new Random();
 
+
         public string origin => _origin;
         public string destination => _destination;
         public DateTime takeOffTime => _takeOffTime;
         public DateTime landingTime => _landingTime;
         public FlightStatus status => _status;
+        public FlightSize size => _size;
         public List<Ticket> tickets => _tickets;
 
         // --- CONSTRUCTORS ---
         public Flight()
         {
-            assignTickets();
+            AssignTickets();
         }
         public Flight(string origin, string destination, DateTime totime, DateTime ltime)
         {
@@ -36,7 +38,7 @@ namespace desarrolloSistemas_airline
             this._destination = destination;
             this._takeOffTime = totime;
             this._landingTime = ltime;
-            assignTickets();
+            this._tickets = AssignTickets();
         }
         public Flight(string origin, string destination, DateTime totime, DateTime ltime, FlightSize size) {
             this._origin = origin;
@@ -44,7 +46,7 @@ namespace desarrolloSistemas_airline
             this._takeOffTime = totime;
             this._landingTime = ltime;
             this._size = size;
-            assignTickets();
+            this._tickets = AssignTickets();
         }
         public Flight(string origin, string destination, DateTime totime, DateTime ltime, FlightStatus status)
         {
@@ -53,7 +55,7 @@ namespace desarrolloSistemas_airline
             this._takeOffTime = totime;
             this._landingTime = ltime;
             this._status = status;
-            assignTickets();
+            this._tickets = AssignTickets();
         }
         public Flight(string origin, string destination, DateTime totime, DateTime ltime, FlightStatus status, FlightSize size)
         {
@@ -63,47 +65,67 @@ namespace desarrolloSistemas_airline
             this._landingTime = ltime;
             this._status = status;
             this._size = size;
-            assignTickets();
+            this._tickets = AssignTickets();
         }
 
         // --- METHODS ---
-        public List<Ticket> getFreeTickets()
+        /// <summary>
+        /// Returns the free <c>Ticket</c>'s <c>List</c> of the specified <c>Flight</c>
+        /// </summary>
+        /// <returns></returns>
+        public List<Ticket> GetFreeTickets()
         {
             if(this._status == FlightStatus.OPEN)
             {
-                List<Ticket> freeTickets = _tickets.FindAll((e) => e.passenger != null);
+                List<Ticket> freeTickets = _tickets.FindAll((e) => e.passenger == null);
 
                 return freeTickets;
             }
             return null;
         }
 
-        public string sellPassage(string passenger)
+        /// <summary>
+        /// Receives a passenger name and assigns it to a random free ticket
+        /// </summary>
+        /// <param name="passenger">Passenger name</param>
+        /// <returns>The ticket that was sold/assigned</returns>
+        public Ticket SellTicket(string passenger)
         {
             if(_status == FlightStatus.OPEN)
             {
-                List<Ticket> freeTickets = getFreeTickets();
+                List<Ticket> freeTickets = GetFreeTickets();
                 Ticket freeTicket = freeTickets[r.Next(maxValue: freeTickets.Count())];
+                freeTicket.sell(passenger);
 
-                checkStatus();
+                CheckStatus();
 
-                return freeTicket.id;
+                return freeTicket;
             }
 
             return null;
         }
 
-        public void checkStatus()
+        /// <summary>
+        /// Checks if the flight status matches the free tickets quantity
+        /// </summary>
+        private void CheckStatus()
         {
-            byte freeTicketsQuantity = (byte) getFreeTickets().Count();
+            byte freeTicketsQuantity = (byte) GetFreeTickets().Count();
             if (freeTicketsQuantity == 0 && _status != FlightStatus.CLOSED) _status = FlightStatus.CLOSED;
             else if (freeTicketsQuantity > 0 && _status != FlightStatus.OPEN) _status = FlightStatus.OPEN;
         }
 
-        private void assignTickets()
+        /// <summary>
+        /// Generates a <c>List</c> of free <c>Ticket</c>'s based on the <c>FlightSize</c>
+        /// </summary>
+        /// <returns>A <c>List</c> of free <c>Ticket</c>'s</returns>
+        private List<Ticket> AssignTickets()
         {
             sbyte rows, cols;
-            if(_size == FlightSize.SMALL)
+            List<Ticket> tickets = new List<Ticket>();
+            double price = CalculatePrice(_takeOffTime, _landingTime);
+
+            if (_size == FlightSize.SMALL)
             {
                 rows = 24;
                 cols = 3;
@@ -117,14 +139,36 @@ namespace desarrolloSistemas_airline
                 cols = 6;
             }
 
-            _tickets = new List<Ticket>(rows*cols);
+            int seats = rows*cols;
 
-            for(int i = 1; i <= _tickets.Capacity; i++)
+            for(int i = 1; i <= seats; i++)
             {
-                _tickets[i-1] = new Ticket(seat: i.ToString());
+                tickets.Add(new Ticket(price: price, seat: i.ToString()));
             }
+
+            return tickets;
         }
 
+        /// <summary>
+        /// Calculates the price of the average ticket based on the given take off time and landing time
+        /// </summary>
+        /// <param name="toTime">Take off time</param>
+        /// <param name="lTime">Landing time</param>
+        /// <returns>The price of an average ticket</returns>
+        private double CalculatePrice(DateTime toTime, DateTime lTime)
+        {
+            return (lTime - toTime).TotalHours * 1000;
+        }
 
+        override
+        public string ToString()
+        {
+            string ticketsDisplay;
+            if (GetFreeTickets() == null) ticketsDisplay = "ALL TICKETS WERE SOLD";
+            else if (GetFreeTickets().Count() == tickets.Count()) ticketsDisplay = $"All tickets ({tickets.Count()}) are free";
+            else ticketsDisplay = $"Tickets sold: {tickets.Count() - GetFreeTickets().Count()} - Available tickets: {GetFreeTickets().Count()}";
+
+            return $"Origin: {origin} - Destination: {destination} - Take off time: {takeOffTime.ToString()} - Landing Time: {landingTime.ToString()} - Status: {status.ToString()} Size: {size.ToString()} - {ticketsDisplay}";
+        }
     }
 }

@@ -48,22 +48,41 @@ namespace desarrolloSistemas_airline
         }
 
         // --- METHODS ---
-        public bool isFree()
+        /// <summary>
+        /// Returns a bool that indicates if the ticket is free
+        /// </summary>
+        /// <returns>A bool that indicates if the ticket is free</returns>
+        public bool IsFree()
         {
             return this._passenger == null;
         }
 
+        /// <summary>
+        /// Assigns a passenger to the specified ticket
+        /// </summary>
+        /// <param name="passenger">The passenger name</param>
         public void sell(string passenger)
         {
-            if(this.isFree()) this._passenger = passenger;
+            if(this.IsFree()) this._passenger = passenger;
         }
 
-        public static string RandomTicket()
+        /// <summary>
+        /// Generates a random alphanumeric ticket id
+        /// </summary>
+        /// <returns>A random alphanumeric ticket id 6 characters length</returns>
+        private static string RandomTicket()
         {
             int length = 6;
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
             return new string(Enumerable.Repeat(chars, length)
                 .Select(s => s[r.Next(s.Length)]).ToArray());
+        }
+
+        override
+        public string ToString()
+        {
+            string passengerToString = passenger == null ? "" : $" - Passenger: {passenger}";
+            return $"Ticket {id} - Price: {price} - Seat: {seat} {passengerToString}";
         }
     }
 }

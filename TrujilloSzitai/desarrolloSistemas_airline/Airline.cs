@@ -27,7 +27,11 @@ namespace desarrolloSistemas_airline
         }
 
         // --- METHODS ---
-        public List<Flight> getFlights(FlightStatus status)
+
+        /// <summary>
+        /// Returns the list of flights that match the given <c>FlightStatus</c> (Open or Closed)
+        /// </summary>
+        public List<Flight> GetFlights(FlightStatus status)
         {
             if (_flights != null)
             {
@@ -42,9 +46,13 @@ namespace desarrolloSistemas_airline
             return null;
         }
 
-        public List<Ticket> getAllFreeTickets()
+        /// <summary>
+        /// Returns the list of all the available tickets from all the flights.
+        /// </summary>
+        /// <returns></returns>
+        public List<Ticket> GetAllFreeTickets()
         {
-            List<Flight> openFlights = getFlights(FlightStatus.OPEN);
+            List<Flight> openFlights = GetFlights(FlightStatus.OPEN);
 
             if(openFlights.Count() > 0)
             {
@@ -52,7 +60,7 @@ namespace desarrolloSistemas_airline
 
                 foreach (Flight flight in openFlights)
                 {
-                    freeTickets.AddRange(flight.getFreeTickets());
+                    freeTickets.AddRange(flight.GetFreeTickets());
                 }
 
                 return freeTickets;
@@ -61,20 +69,35 @@ namespace desarrolloSistemas_airline
             return null;
         }
 
-        public string sellPassage(string origin, string destination, DateTime takeOffTime, DateTime landingTime, string passengerName)
+        /// <summary>
+        /// Assigns a <c>passegner</c> to a random <c>Ticket</c> from the specified <c>Flight</c>.
+        /// </summary>
+        /// <param name="origin"><c>Flight</c> origin</param>
+        /// <param name="destination"><c>Flight</c> destination</param>
+        /// <param name="takeOffTime"><c>Flight</c> take off time</param>
+        /// <param name="landingTime"><c>Flight</c> landing time</param>
+        /// <param name="passengerName">The <c>passenger</c> name</param>
+        /// <returns>The <c>Ticket</c> that was assigned to the passenger or <c>null</c> if there are not free tickets left.</returns>
+        public Ticket SellTicket(string origin, string destination, DateTime takeOffTime, DateTime landingTime, string passengerName)
         {
-            List<Flight> matchFlights = getFlights(FlightStatus.OPEN).FindAll((e) => (e.origin == origin && e.destination == destination && e.takeOffTime == takeOffTime && e.landingTime == landingTime));
+            List<Flight> matchFlights = GetFlights(FlightStatus.OPEN).FindAll((e) => (e.origin == origin && e.destination == destination && e.takeOffTime == takeOffTime && e.landingTime == landingTime));
 
             if(matchFlights.Count() > 0)
             {
                 Flight flight = matchFlights[r.Next(matchFlights.Count())];
 
-                string seatId = flight.sellPassage(passengerName);
+                Ticket ticketSold = flight.SellTicket(passengerName);
 
-                return seatId;
+                return ticketSold;
             }
 
             return null;
+        }
+
+        override
+        public string ToString()
+        {
+            return $"Name: {name} Flights: {flights.Count()}";
         }
     }
 }
