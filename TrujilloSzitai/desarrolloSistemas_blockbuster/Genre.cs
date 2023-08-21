@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace desarrolloSistemas_blockbuster
 {
-    class Genre
+    enum Genre
     {
+        ACTION,
+        DRAMA,
+        SUSPENSE,
     }
 }
