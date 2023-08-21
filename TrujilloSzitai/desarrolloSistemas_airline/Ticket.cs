@@ -23,12 +23,12 @@ namespace desarrolloSistemas_airline
         // --- CONSTRUCTORS ---
         public Ticket(string seat)
         {
-            this._id = RandomTicket();
+            this._id = RandomTicket(6);
             this._seat = seat;
         }
         public Ticket(double price, string seat)
         {
-            this._id = RandomTicket();
+            this._id = RandomTicket(6);
             this._price = price;
             this._seat = seat;
         }
@@ -70,9 +70,8 @@ namespace desarrolloSistemas_airline
         /// Generates a random alphanumeric ticket id
         /// </summary>
         /// <returns>A random alphanumeric ticket id 6 characters length</returns>
-        private static string RandomTicket()
+        private static string RandomTicket(int length)
         {
-            int length = 6;
             const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
             return new string(Enumerable.Repeat(chars, length)
                 .Select(s => s[r.Next(s.Length)]).ToArray());
