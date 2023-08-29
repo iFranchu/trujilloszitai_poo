@@ -11,6 +11,7 @@ namespace desarrolloSistemas_blockbuster
         Movie _movie = new Movie();
         int _daysLimit = 0;
         Customer _customer = new Customer();
+        // i guess it's not necessary to create a Date class if the language that we're using already has one
         DateTime _date = new DateTime();
 
         public Movie movie => _movie;
