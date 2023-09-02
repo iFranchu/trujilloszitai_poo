@@ -1,0 +1,5 @@
+namespace steam {
+    class Date {
+
+    }
+}
