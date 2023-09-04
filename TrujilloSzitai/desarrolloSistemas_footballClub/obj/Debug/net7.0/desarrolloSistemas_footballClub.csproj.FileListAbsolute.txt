@@ -1,0 +1,14 @@
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_footballClub\obj\Debug\net7.0\desarrolloSistemas_footballClub.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_footballClub\obj\Debug\net7.0\desarrolloSistemas_footballClub.AssemblyInfoInputs.cache
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_footballClub\obj\Debug\net7.0\desarrolloSistemas_footballClub.AssemblyInfo.cs
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_footballClub\obj\Debug\net7.0\desarrolloSistemas_footballClub.csproj.CoreCompileInputs.cache
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_footballClub\bin\Debug\net7.0\desarrolloSistemas_footballClub.exe
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_footballClub\bin\Debug\net7.0\desarrolloSistemas_footballClub.deps.json
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_footballClub\bin\Debug\net7.0\desarrolloSistemas_footballClub.runtimeconfig.json
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_footballClub\bin\Debug\net7.0\desarrolloSistemas_footballClub.dll
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_footballClub\bin\Debug\net7.0\desarrolloSistemas_footballClub.pdb
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_footballClub\obj\Debug\net7.0\desarrolloSistemas_footballClub.dll
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_footballClub\obj\Debug\net7.0\refint\desarrolloSistemas_footballClub.dll
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_footballClub\obj\Debug\net7.0\desarrolloSistemas_footballClub.pdb
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_footballClub\obj\Debug\net7.0\desarrolloSistemas_footballClub.genruntimeconfig.cache
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\desarrolloSistemas_footballClub\obj\Debug\net7.0\ref\desarrolloSistemas_footballClub.dll
