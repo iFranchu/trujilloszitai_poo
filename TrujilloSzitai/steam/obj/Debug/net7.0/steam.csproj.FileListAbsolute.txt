@@ -1,0 +1,14 @@
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\steam\bin\Debug\net7.0\steam.exe
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\steam\bin\Debug\net7.0\steam.deps.json
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\steam\bin\Debug\net7.0\steam.runtimeconfig.json
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\steam\bin\Debug\net7.0\steam.dll
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\steam\bin\Debug\net7.0\steam.pdb
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\steam\obj\Debug\net7.0\steam.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\steam\obj\Debug\net7.0\steam.AssemblyInfoInputs.cache
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\steam\obj\Debug\net7.0\steam.AssemblyInfo.cs
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\steam\obj\Debug\net7.0\steam.csproj.CoreCompileInputs.cache
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\steam\obj\Debug\net7.0\steam.dll
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\steam\obj\Debug\net7.0\refint\steam.dll
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\steam\obj\Debug\net7.0\steam.pdb
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\steam\obj\Debug\net7.0\steam.genruntimeconfig.cache
+C:\Users\truji\source\repos\trujilloszitai_poo\TrujilloSzitai\steam\obj\Debug\net7.0\ref\steam.dll

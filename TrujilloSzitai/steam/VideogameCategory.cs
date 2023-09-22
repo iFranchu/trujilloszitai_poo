@@ -1,5 +1,7 @@
 namespace steam {
-    class VideogameCategory {
-
+    enum VideogameCategory {
+        ACTION,
+        PUZZLE,
+        SIMULATION,
     }
 }
