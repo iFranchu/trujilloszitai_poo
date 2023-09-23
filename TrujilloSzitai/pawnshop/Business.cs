@@ -53,7 +53,7 @@ namespace pawnshop
 
         public Item? searchItem(string itemName)
         {
-            /* bool foundItem = false;
+            bool foundItem = false;
             int i = 0;
             Item? searchItem = null;
             Item item;
@@ -73,15 +73,15 @@ namespace pawnshop
                 i++;
             }
 
-            return searchItem; */
+            return searchItem;
 
             // más basado ↓↓↓↓
-            foreach (Item item in items)
+            /* foreach (Item item in items)
             {
                 if(item.Name == itemName) return item;
             }
 
-            return null;
+            return null; */
         }
     }
 }

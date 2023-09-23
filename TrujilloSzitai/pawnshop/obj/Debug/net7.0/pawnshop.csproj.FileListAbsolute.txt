@@ -1,0 +1,15 @@
+/home/pendriveencrypt2/dev/trujilloszitai_poo/TrujilloSzitai/pawnshop/bin/Debug/net7.0/pawnshop
+/home/pendriveencrypt2/dev/trujilloszitai_poo/TrujilloSzitai/pawnshop/bin/Debug/net7.0/pawnshop.deps.json
+/home/pendriveencrypt2/dev/trujilloszitai_poo/TrujilloSzitai/pawnshop/bin/Debug/net7.0/pawnshop.runtimeconfig.json
+/home/pendriveencrypt2/dev/trujilloszitai_poo/TrujilloSzitai/pawnshop/bin/Debug/net7.0/pawnshop.dll
+/home/pendriveencrypt2/dev/trujilloszitai_poo/TrujilloSzitai/pawnshop/bin/Debug/net7.0/pawnshop.pdb
+/home/pendriveencrypt2/dev/trujilloszitai_poo/TrujilloSzitai/pawnshop/obj/Debug/net7.0/pawnshop.csproj.AssemblyReference.cache
+/home/pendriveencrypt2/dev/trujilloszitai_poo/TrujilloSzitai/pawnshop/obj/Debug/net7.0/pawnshop.GeneratedMSBuildEditorConfig.editorconfig
+/home/pendriveencrypt2/dev/trujilloszitai_poo/TrujilloSzitai/pawnshop/obj/Debug/net7.0/pawnshop.AssemblyInfoInputs.cache
+/home/pendriveencrypt2/dev/trujilloszitai_poo/TrujilloSzitai/pawnshop/obj/Debug/net7.0/pawnshop.AssemblyInfo.cs
+/home/pendriveencrypt2/dev/trujilloszitai_poo/TrujilloSzitai/pawnshop/obj/Debug/net7.0/pawnshop.csproj.CoreCompileInputs.cache
+/home/pendriveencrypt2/dev/trujilloszitai_poo/TrujilloSzitai/pawnshop/obj/Debug/net7.0/pawnshop.dll
+/home/pendriveencrypt2/dev/trujilloszitai_poo/TrujilloSzitai/pawnshop/obj/Debug/net7.0/refint/pawnshop.dll
+/home/pendriveencrypt2/dev/trujilloszitai_poo/TrujilloSzitai/pawnshop/obj/Debug/net7.0/pawnshop.pdb
+/home/pendriveencrypt2/dev/trujilloszitai_poo/TrujilloSzitai/pawnshop/obj/Debug/net7.0/pawnshop.genruntimeconfig.cache
+/home/pendriveencrypt2/dev/trujilloszitai_poo/TrujilloSzitai/pawnshop/obj/Debug/net7.0/ref/pawnshop.dll
